@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    id("maven-publish")
 }
 
 android {
@@ -44,4 +45,16 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.jkl4o4"
+                artifactId = "wayforpay.widget"
+                version = "0.0.1"
+            }
+        }
+    }
 }
