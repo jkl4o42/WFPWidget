@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "WFPWidget"
 include(":app")
+include(":widget")
