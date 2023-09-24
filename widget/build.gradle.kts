@@ -50,6 +50,7 @@ afterEvaluate {
                 groupId = "com.jkl4o4"
                 artifactId = "wayforpay.widget"
                 version = "0.0.1"
+                from(components["release"])
             }
         }
     }
