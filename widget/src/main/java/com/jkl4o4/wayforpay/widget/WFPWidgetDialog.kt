@@ -11,7 +11,6 @@ import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.fragment.app.DialogFragment
-import com.jkl4o4.wayforpay.R
 
 class WFPWidgetDialog(
     private val client: WFPClient,

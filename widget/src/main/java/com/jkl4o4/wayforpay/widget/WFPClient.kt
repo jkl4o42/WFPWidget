@@ -5,7 +5,7 @@ import javax.crypto.Mac
 import javax.crypto.spec.SecretKeySpec
 
 class WFPClient(
-    var secretKey: String,
+    private var secretKey: String,
     var request: WFPModel
 ) {
 
